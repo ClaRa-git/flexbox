@@ -1,7 +1,19 @@
-.flexbox {
-    display: flex;
+/* Variables */
+:root {
+    --text-dark: #03275a;
+    --bg-light: #f5f5f5;
+    --bg-menu: #1a7dd7;
+    --bg-highlight: #F2B809;
+    --text-link: #F37402;
+    --text-link-highlight: #F37402;
+
 }
 
-.flexbox > * {
-    flex-grow: 1;
+/* Généralités */
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
 }
