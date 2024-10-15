@@ -95,7 +95,12 @@ h4, .h4 {
 
 /* --- <header> --- */
 
+
 /* --- <main> --- */
+.intro-content > * {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
 /* --- <footer> --- */
 footer {
@@ -153,5 +158,19 @@ footer {
         margin-left: auto;
         width: 960px;
     }
-    
+
+    /* ----- Styles des pages ----- */
+    /* ---  <main> --- */
+    .intro-content {
+        display: flex;
+        gap: 30px; /* Gouttière entre les 2 colonnes, va préserver un espace entre les éléments. A mettre sur le parent flex */
+    }
+
+    .welcome {
+        flex-grow: 1;
+    }
+
+    .latest-products {
+        flex: 0 0 300px /*combo entre les 3 (dans l'ordre): grow shrink basis */
+    }
 }
