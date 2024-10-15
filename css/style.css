@@ -5,12 +5,13 @@
 
 :root {
     --text-dark: #03275a;
-    --bg-light: #f5f5f5;
-    --bg-menu: #1a7dd7;
-    --bg-highlight: #f2b809;
+    --text-light: #f5f5f5;
     --text-link: #F37605;
     --text-link-highlight: #fda04e; 
-
+    --bg-light: #f5f5f5;
+    --bg-dark: #03275a;
+    --bg-menu: #1a7dd7;
+    --bg-highlight: #f2b809;
 }
 
 
@@ -89,16 +90,51 @@ h4, .h4 {
     padding-left: 15px;
 }
 
+
 /* ----- Styles des pages ----- */
+
+/* --- <header> --- */
+
+/* --- <main> --- */
+
+/* --- <footer> --- */
+footer {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+
+.footer-top > * {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.footer-bottom {
+    background-color: var(--bg-light);
+    color: var(--text-dark);    
+    padding: 15px 0; /* 15px en haut et en bas 0px à gauche et à droite */
+}
+
+    /* N'importe quelle balise qui est un enfant direct de footer-bottom */
+    .footer-bottom > * {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
 
 /* ----- Responsive ----- */
 
 /* --- Tablettes et plus grand (à partir de 768px de large) --- */ 
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
 
-    /* TODO: le code */
-
-}
+    /* --- <footer> --- */
+    .footer-top {
+        display: flex;
+    }
+        .footer-top > * {
+            flex-basis: 50%;
+        }
+    }
 
 /* --- Seulement tablettes (entre 768px et 991px de large) --- */
 @media (min-width: 768px) and (max-width: 991px) {
