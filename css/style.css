@@ -81,3 +81,41 @@ h4, .h4 {
     margin-bottom: 5px;
 }
 
+/* ----- Composants et outils ----- */
+
+/* --- Contenuers de centrage --- */
+.container {   
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* ----- Styles des pages ----- */
+
+/* ----- Responsive ----- */
+
+/* --- Tablettes et plus grand (à partir de 768px de large) --- */ 
+@media (min-width: 768px) {
+
+    /* TODO: le code */
+
+}
+
+/* --- Seulement tablettes (entre 768px et 991px de large) --- */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* TODO: le code */
+
+}
+
+/* Desktop (écran de 1024px de résolution horizontale) et plus grand (à partir de 992px de large) */
+@media (min-width: 992px){
+    
+    /* ----- Composants et outils ----- */
+    /* --- Contenuers de centrage --- */
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        width: 960px;
+    }
+    
+}
