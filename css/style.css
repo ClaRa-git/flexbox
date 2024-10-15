@@ -1,19 +1,83 @@
-/* Variables */
+/* ----- Variables ----- */
+/* Désigne la balise racine, c'est-à-dire <html> */
+
+/*Si la couleur ne va pas, ne pas toucher au hexa mais passer en hsl et modifier la luminosité */
+
 :root {
     --text-dark: #03275a;
     --bg-light: #f5f5f5;
     --bg-menu: #1a7dd7;
-    --bg-highlight: #F2B809;
-    --text-link: #F37402;
-    --text-link-highlight: #F37402;
+    --bg-highlight: #f2b809;
+    --text-link: #F37605;
+    --text-link-highlight: #fda04e; 
 
 }
 
-/* Généralités */
+
+/* ----- Généralités ----- */
 body {
     background-color: var(--bg-light);
     color: var(--text-dark);
     font-family: "Lato", serif;
-    font-weight: 400;
-    font-style: normal;
 }
+
+/* --- Liens --- */
+a {
+    color: var(--text-link);
+    font-weight: 700;
+
+    /* Transition de changement de la propriété color */
+    transition: color .3s linear;
+}
+
+    /* Désigne un lien que l'on survole
+    a:hover {
+        color: var(--text-link-highlight);
+    }
+    */
+
+    /* Désigne un élément lorsque l'on reste appuyé dessus (souris ou tactile) */
+    a:active {
+        color: var(--text-link-highlight);
+    }
+
+    /* ::before / ::after <- permet de rajouter du contenu esthétique à un élément sans toucher au html
+    se trouve entre la content-box et le padding
+    a::after {
+        content: "↗️";
+    }*/
+
+    a[target="_blank"]::after {
+        content: "↗️";
+    }
+
+/* --- Titre --- */
+/* Tous les <h1> à <h4> ou nimporte quelle balise avec la classe "h1" à "h4" */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+}
+
+h1, .h1 {
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+h2, .h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h3, .h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h4, .h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
