@@ -94,6 +94,16 @@ h4, .h4 {
 /* ----- Styles des pages ----- */
 
 /* --- <header> --- */
+.header-photo,
+.header-photo img {
+    display: block;
+}
+
+.header-photo img {
+    height: 250px;
+    object-fit: cover; /* Permet de recadrer automatiquement l'image */
+    width: 100%;
+}
 
 
 /* --- <main> --- */
@@ -130,7 +140,12 @@ footer {
 /* ----- Responsive ----- */
 
 /* --- Tablettes et plus grand (à partir de 768px de large) --- */ 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
+
+    /*--- <header> --- */
+    .header-photo img {
+        height: 450px;
+    }
 
     /* --- <footer> --- */
     .footer-top {
@@ -139,7 +154,7 @@ footer {
         .footer-top > * {
             flex-basis: 50%;
         }
-    }
+}
 
 /* --- Seulement tablettes (entre 768px et 991px de large) --- */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -160,6 +175,16 @@ footer {
     }
 
     /* ----- Styles des pages ----- */
+    /*--- <header> --- */
+    .top-bar {
+        position: absolute;
+        width: 100%;
+    }
+
+    .header-photo img {
+        height: 80vh; /* viewport height - 80% de la hauteur du viewport */
+    }
+
     /* ---  <main> --- */
     .intro-content {
         display: flex;

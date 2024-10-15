@@ -21,7 +21,29 @@
 
     <body>
         <header>
-            
+            <div class="top-bar">
+                <div class="container">
+                    <div class="logo-bar">Mon Site</div>
+                    <div class="menu">
+                        <!-- TODO : Le bouton - display :none -->                        
+                        <nav>
+                            <ul>
+                                <li><a href="#">Lien 1</a></li>
+                                <li><a href="#">Lien 2</a></li>
+                                <li><a href="#">Lien 3</a></li>
+                                <li><a href="#">Lien 4</a></li>
+                                <li><a href="#">Lien 5</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>      
+            </div>
+            <picture class="header-photo">
+                <source srcset="./img/landscape-01-450.jpg" media="(max-width: 450px)">
+                <source srcset="./img/landscape-01-768.jpg" media="(max-width: 768px)">
+                <source srcset="./img/landscape-01-992.jpg" media="(max-width: 992px)">
+                <img src="./img/landscape-01.jpg" alt="Joli paysage de montagne">
+            </picture>            
         </header>
 
         <main>
